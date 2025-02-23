@@ -8,7 +8,8 @@
 - Create route grup (root) to alocate all my pages
 - Create components folder
 - Create Navbar
-
+- Create Spline Scene
+- Add hero component
 ### Changed
 
 ### Fixed
