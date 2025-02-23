@@ -1,24 +1,17 @@
+import HeroText from "./heroText";
 import SplineScene from "./splineScene";
-
-interface People {
-  recruiter: string;
-  developer: string;
-  designer: string;
-}
-
-const people: People = {
-  recruiter:
-    "4 years Full stack developer, I have worked in agile enviroments and start ups, participating in discussions",
-  developer:
-    "4 years Full stack developer, I have worked in agile enviroments and start ups, participating in discussions ",
-  designer:
-    "4 years Full stack developer, I have worked in agile enviroments and start ups, participating in discussions",
-};
 
 const Hero = () => {
   return (
-    <main>
-      <SplineScene />
+    <main className="pt-12 md:h-svh relative overflow-hidden">
+      <div className="absolute inset-0 z-10 pointer-events-none">
+        <div className="pointer-events-auto">
+          <HeroText />
+        </div>
+      </div>
+      <div className="h-full pt-14 md:pt-0 w-full">
+        <SplineScene />
+      </div>
     </main>
   );
 };
