@@ -1,9 +1,10 @@
-// import Image from "next/image";
-
+// import SplineScene from "../components/splineScene";
+import Hero from "../components/hero";
 const Home = () => {
-
   return (
-    <h1 className="text-5xl">hello home</h1>
-  )
-}
+    <main className="">
+      <Hero />
+    </main>
+  );
+};
 export default Home;
