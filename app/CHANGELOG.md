@@ -10,6 +10,9 @@
 - Create Navbar
 - Create Spline Scene
 - Add hero component
+- Add Aceternity UI package
+- Import Bento grid component
+
 ### Changed
 
 ### Fixed
