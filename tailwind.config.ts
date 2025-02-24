@@ -44,6 +44,36 @@ const addVariablesForColors = plugin(({ addBase, theme }) => {
   });
 });
 
+// Plugin to add the .wrapper component
+const wrapperPlugin = plugin(({ addComponents }) => {
+  addComponents({
+    ".wrapper": {
+      maxWidth: "90%",
+      marginLeft: "auto",
+      marginRight: "auto",
+      paddingLeft: "15px",
+      paddingRight: "15px",
+      width: "100%",
+
+      "@screen md": {
+        maxWidth: "calc(100% - 40px)",
+        paddingLeft: "20px",
+        paddingRight: "20px",
+      },
+      "@screen lg": {
+        maxWidth: "calc(100% - 60px)",
+        paddingLeft: "20px",
+        paddingRight: "20px",
+      },
+      "@screen 2xl": {
+        maxWidth: "1325px",
+        paddingLeft: "3.906rem",
+        paddingRight: "3.906rem",
+      },
+    },
+  });
+});
+
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -61,6 +91,7 @@ const config: Config = {
   plugins: [
     animate,
     addVariablesForColors,
+    wrapperPlugin, // Added the new plugin here
     plugin(({ matchUtilities, theme }) => {
       matchUtilities(
         {
