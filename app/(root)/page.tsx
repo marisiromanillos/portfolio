@@ -1,9 +1,10 @@
-// import SplineScene from "../components/splineScene";
-import Hero from "../components/hero";
+import Grid from "@/components/Grid";
+import Hero from "../../components/hero";
 const Home = () => {
   return (
-    <main className="">
+    <main>
       <Hero />
+      <Grid />
     </main>
   );
 };
