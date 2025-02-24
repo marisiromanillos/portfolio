@@ -12,6 +12,7 @@
 - Add hero component
 - Add Aceternity UI package
 - Import Bento grid component
+- Add wrapper class to Tailwind config
 
 ### Changed
 
