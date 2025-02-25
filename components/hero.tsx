@@ -3,7 +3,7 @@ import SplineScene from "./splineScene";
 
 const Hero = () => {
   return (
-    <main className="pt-12 md:h-svh relative overflow-hidden">
+    <main className="pt-12 h-svh relative overflow-hidden">
       <div className="absolute inset-0 z-10 pointer-events-none">
         <div className="pointer-events-auto">
           <HeroText />
