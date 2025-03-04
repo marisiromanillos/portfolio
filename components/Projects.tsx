@@ -61,7 +61,7 @@ const Projects = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 items-center justify-center  sm:gap-20 gap-20 ">
           {projectContent.map((item) => (
             <PinContainer key={item.id} title={item.title} href={item.link}>
-              <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 w-[21rem] sm:w-[30rem] md:w-[25rem]  lg:w-[20rem] h-[20rem]">
+              <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 w-[20rem]  sm:w-[30rem] md:w-[20rem]  lg:w-[18rem] h-[20rem]">
                 <h3 className="max-w-xs !pb-2 !m-0 font-bold text-base text-slate-100">
                   {item.title}
                 </h3>
