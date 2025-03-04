@@ -2,11 +2,11 @@
 "use client";
 import { useState } from "react";
 
-interface People {
+type People = {
   Recruiter: string;
   Engineer: string;
   Designer: string;
-}
+};
 
 const people: People = {
   Recruiter:
