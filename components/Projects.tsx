@@ -56,7 +56,7 @@ const Projects = () => {
     <section className="md:py-16  py-12">
       <div className="wrapper">
         <div>
-          <h1>Projects</h1>
+          <h1 className="title1">Projects Lorem Ipsum</h1>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 items-center justify-center  sm:gap-20 gap-20 ">
           {projectContent.map((item) => (

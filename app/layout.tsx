@@ -16,7 +16,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Full Stack Developer",
-  description: "Nextjs, React, Redux, Node, SQL, Express, Hono",
+  description: "Experienced in Javascript, Nextjs, React, Express, Node, SQL,",
 };
 
 export default function RootLayout({
