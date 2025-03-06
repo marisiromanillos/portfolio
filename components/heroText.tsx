@@ -10,11 +10,11 @@ type People = {
 
 const people: People = {
   Recruiter:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies lectus libero, tincidunt vehicula lacus malesuada nec. Cras ultricies lectin vehicula lacus malesuada nec.",
+    "Full Stack Developer specializing in Javascript, Typescript, React, Next.js, Node.js, SQL and Vercel. My current interests are Remix, Jest, Playwright.4 years of commercial experience working in fast-paced environments and building front-end and back-end web applications that have served over 300,000 users, focusing on user experience and optimization, with a strong eye for clean code and testing.",
   Engineer:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies lectin vehicula lacus malesuada nec. Cras ultricies lectin vehicula lacus malesuada nec.",
+    "01000110 01110101 01101100 01101100 00100000 01010011 01110100 01100001 01100011 01101011 00101100 00100000 01001010 01110011 00101100 00100000 01010100 01110011 00101100 00100000 01010010 01100101 01100001 01100011 01110100 00101100 00100000 01001110 01100101 01111000 01110100 00101100 00100000 01001110 01101111 01100100 01100101 00101100 00100000 01000101 01111000 01110000 01110010 01100101 01110011 01110011 00101100 00100000 01010011 01010001 01001100 00101100 00100000 01101001 00100000 01101100 01100101 01100001 01110010 01101110 00100000 01100110 01100001 01110011 01110100",
   Designer:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies lectus libero, tincidunt vehicula lacus malesuada nec. Cras ultricies lectin vehicula lacus malesuada nec.",
+    "Work closely with design teams through Figma or other platforms, translating visual concepts into functional code while maintaining regular communication. Provide technical feedback on design feasibility while respecting creative vision. I prioritize pixel-perfect execution to deliver exceptional user experiences aligned with design specifications",
 };
 
 const HeroText = () => {
@@ -51,7 +51,7 @@ const HeroText = () => {
             }`}
           >
             {selectedRole === role && (
-              <p className="text-gray-600 max-w-md md:max-w-xl mx-auto">
+              <p className="text-gray-400 max-w-md md:max-w-xl mx-auto">
                 {description}
               </p>
             )}
