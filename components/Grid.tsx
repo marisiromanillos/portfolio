@@ -12,8 +12,9 @@ const Grid = () => {
   );
   const items = [
     {
-      title: "The Dawn of Innovation",
-      description: "Explore the birth of groundbreaking ideas and inventions.",
+      title: "Full Stack Developer",
+      description:
+        "4 years of experience working and collaborating across teams. I prioritize clean and documented code, fostering open communication and optimization in my work",
       header: <Skeleton />,
       className: "md:col-span-2",
       icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
