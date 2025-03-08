@@ -85,6 +85,7 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        hotPink: "#FF1FF4",
       },
     },
   },
