@@ -5,7 +5,7 @@ const Projects = () => {
   const projectContent = [
     {
       id: 1,
-      title: "3D Solar System Planets to Explore",
+      title: "Store Locator",
       des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
       img: "/p1.svg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
@@ -13,7 +13,7 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: "3D Solar System Planets to Explore",
+      title: "Swytch Bike Main Site",
       des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
       img: "/p1.svg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
@@ -21,7 +21,7 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "3D Solar System Planets to Explore",
+      title: "Swytch Tools Zendesk App",
       des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
       img: "/p1.svg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
@@ -29,7 +29,7 @@ const Projects = () => {
     },
     {
       id: 4,
-      title: "3D Solar System Planets to Explore",
+      title: "Swytch Bike Order Site",
       des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
       img: "/p1.svg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
@@ -37,7 +37,7 @@ const Projects = () => {
     },
     {
       id: 5,
-      title: "3D Solar System Planets to Explore",
+      title: "Kaizen Physiotherapy & Performance",
       des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
       img: "/p1.svg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
@@ -45,7 +45,7 @@ const Projects = () => {
     },
     {
       id: 6,
-      title: "3D Solar System Planets to Explore",
+      title: "PathFinder",
       des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
       img: "/p1.svg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
@@ -56,7 +56,7 @@ const Projects = () => {
     <section className="md:py-16  py-12">
       <div className="wrapper">
         <div>
-          <h1 className="title1">Projects Lorem Ipsum</h1>
+          <h1 className="title1">Recent Projects</h1>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 items-center justify-center  sm:gap-20 gap-20 ">
           {projectContent.map((item) => (
