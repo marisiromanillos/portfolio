@@ -36,7 +36,7 @@ const Grid = () => {
     {
       title: <h3 className="text-hotPink">Full Stack Developer</h3>,
       description: (
-        <p className="leading-5 w-4/5">
+        <p className="leading-5 w-full lg:w-4/5">
           4 years of professional experience collaborating across
           multidisciplinary teams. I prioritize writing clean, well-documented
           code while fostering transparent communication. I excel at translating
