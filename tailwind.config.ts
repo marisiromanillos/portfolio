@@ -93,6 +93,7 @@ const config: Config = {
   plugins: [
     animate,
     addVariablesForColors,
+
     wrapperPlugin,
     plugin(({ matchUtilities, theme }) => {
       matchUtilities(

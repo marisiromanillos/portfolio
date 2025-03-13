@@ -26,7 +26,7 @@ const UniqueProjectSlug: React.FC<UniqueProjectSlugProps> = ({ slug }) => {
               {item.badge}
             </h2>
 
-            <p className="text-xl mb-4">{item.title}</p>
+            <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
 
             <div className="text-sm prose prose-sm dark:prose-invert">
               {item.image && (
