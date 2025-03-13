@@ -1,64 +1,114 @@
 "use client";
 import { PinContainer } from "./ui/3Dpin";
+import { DiJavascript1, DiPhp, DiSass, DiHtml5 } from "react-icons/di";
+import {
+  SiTailwindcss,
+  SiGooglemaps,
+  SiTypescript,
+  SiPrimevue,
+  SiExpress,
+  SiMysql,
+  SiOpenlayers,
+  SiJest,
+  SiNextdotjs,
+} from "react-icons/si";
+import { FaVuejs, FaNode, FaReact } from "react-icons/fa";
+
+import { TbApi } from "react-icons/tb";
 
 const Projects = () => {
   const projectContent = [
     {
       id: 1,
-      title: "Store Locator",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-      img: "/p1.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+      title: "Swytch Bike Store Locator",
+      des: "User can search for stores by name,address or geolocation and get the store details and location on a map.",
+      icons: [
+        <DiJavascript1 key="js" className="h-4 w-4 text-white" />,
+        <SiTailwindcss key="tailwind" className="h-4 w-4 text-white" />,
+        <TbApi key="api" className="h-4 w-4 text-white" />,
+        <SiGooglemaps key="maps" className="h-4 w-4 text-white" />,
+        <DiHtml5 key="html" className="h-4 w-4 text-white" />,
+        <DiSass key="scss" className="h-4 w-4 text-white" />,
+        ,
+      ],
       link: "https://github.com/adrianhajdin?tab=repositories",
     },
     {
       id: 2,
       title: "Swytch Bike Main Site",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-      img: "/p1.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+      des: "Led redevelopment of the main and order sites (300,000+ users), improving UX, performance, and SEO.",
+      icons: [
+        <DiJavascript1 key="js" className="h-4 w-4 text-white" />,
+        <DiPhp key="php" className="h-4 w-4 text-white" />,
+        <SiTailwindcss key="tailwind" className="h-4 w-4 text-white" />,
+        <DiSass key="scss" className="h-4 w-4 text-white" />,
+        <DiHtml5 key="html" className="h-4 w-4 text-white" />,
+      ],
       link: "https://github.com/adrianhajdin?tab=repositories",
     },
     {
       id: 3,
       title: "Swytch Tools Zendesk App",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-      img: "/p1.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+      des: "Streamlined customer service operations by building a unified Zendesk app that consolidated multiple tools into a single interface.",
+      icons: [
+        <SiTypescript key="ts" className="h-4 w-4 text-white" />,
+        <FaVuejs key="vue" className="h-4 w-4 text-white" />,
+        <SiPrimevue key="primevue" className="h-4 w-4 text-white" />,
+        <SiTailwindcss key="tailwind" className="h-4 w-4 text-white" />,
+        <TbApi key="api" className="h-4 w-4 text-white" />,
+      ],
       link: "https://github.com/adrianhajdin?tab=repositories",
     },
     {
       id: 4,
-      title: "Swytch Bike Order Site",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-      img: "/p1.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+      title: "Simpsons API",
+      des: "Scalable API with CRUD operations, secure login, middleware, and SQL database integration.",
+      icons: [
+        <DiJavascript1 key="js" className="h-4 w-4 text-white" />,
+        <FaNode key="node" className="h-4 w-4 text-white" />,
+        <SiExpress key="express" className="h-4 w-4 text-white" />,
+        <SiMysql key="mongo" className="h-4 w-4 text-white" />,
+      ],
       link: "https://github.com/adrianhajdin?tab=repositories",
     },
     {
       id: 5,
-      title: "Kaizen Physiotherapy & Performance",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+      title: "Kaizen Physiotherapy",
+      des: "Architecting and implementing a web app using server-side rendering and static site generation for optimal performance",
       img: "/p1.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+      icons: [
+        <SiTypescript key="ts" className="h-4 w-4 text-white" />,
+        <FaReact key="react" className="h-4 w-4 text-white" />,
+        <SiNextdotjs key="next" className="h-4 w-4 text-white" />,
+        <SiJest key="jest" className="h-4 w-4 text-white" />,
+        <SiTailwindcss key="tailwind" className="h-4 w-4 text-white" />,
+      ],
       link: "https://github.com/adrianhajdin?tab=repositories",
     },
     {
       id: 6,
       title: "PathFinder",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+      des: "Built an interactive route-mapping web app that enables users to draw custom paths for running, hiking, and cycling.",
       img: "/p1.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+      icons: [
+        <SiTypescript key="ts" className="h-4 w-4 text-white" />,
+        <FaReact key="react" className="h-4 w-4 text-white" />,
+        <SiOpenlayers key="openlayers" className="h-4 w-4 text-white" />,
+        <SiJest key="jest" className="h-4 w-4 text-white" />,
+        <SiTailwindcss key="tailwind" className="h-4 w-4 text-white" />,
+      ],
       link: "https://github.com/adrianhajdin?tab=repositories",
     },
   ];
   return (
     <section className="md:py-16  py-12">
       <div className="wrapper">
-        <div>
-          <h1 className="title1">Recent Projects</h1>
+        <div className="pb-12">
+          <h1 className="font-bold text-center md:text-6xl text-2xl">
+            Recent Projects
+          </h1>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 items-center justify-center  sm:gap-20 gap-20 ">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-20 ">
           {projectContent.map((item) => (
             <PinContainer key={item.id} title={item.title} href={item.link}>
               <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 w-[20rem]  sm:w-[30rem] md:w-[20rem]  lg:w-[18rem] h-[20rem]">
@@ -68,6 +118,7 @@ const Projects = () => {
                 <div className="text-base !m-0 !p-0 font-normal">
                   <span className="text-slate-500 ">{item.des}</span>
                 </div>
+                <div className="flex py-2 gap-3">{item.icons}</div>
                 <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
               </div>
             </PinContainer>
