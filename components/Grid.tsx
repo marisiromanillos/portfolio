@@ -9,7 +9,6 @@ import Image from "next/image";
 const Grid = () => {
   const getImageByItemId = (id: number) => {
     const imageMap: Record<number, string> = {
-      // 1: "/example.webp", // Full Stack Developer image
       2: "/kaizen.png", // Currently Working On image
       3: "/review.png", // LinkedIn image
       4: "/github.webp", // GitHub image
@@ -27,7 +26,7 @@ const Grid = () => {
         width="0"
         height="0"
         sizes="100vw"
-        style={{ width: "100%", height: "100%" }}
+        style={{ width: "100%", height: "auto" }}
         priority
       />
     </div>
@@ -45,7 +44,7 @@ const Grid = () => {
           maintainable solutions that drive business value
         </p>
       ),
-      className: "md:col-span-2 items-center justify-center",
+      className: "md:col-span-2 py-10 md:py-0 items-center justify-center",
       icon: (
         <div className="flex gap-3">
           <DiJavascript1 className="h-4 w-4 text-white" />
