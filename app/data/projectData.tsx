@@ -11,7 +11,7 @@ export type ProjectSlug =
 export interface ProjectItem {
   title: string;
   description: React.ReactNode;
-  badge: string;
+  badge: string[];
   image: string;
 }
 
@@ -28,34 +28,64 @@ export const projectContent: Record<ProjectSlug, ProjectContent> = {
         title: "Swytch Bike Store Locator",
         description: (
           <>
-            <h2>Description</h2>
-            <p>
-              Sit duis est minim proident non nisi velit non consectetur. Esse
-              adipisicing laboris consectetur enim ipsum reprehenderit eu
-              deserunt Lorem ut aliqua anim do. Duis cupidatat qui irure
-              cupidatat incididunt incididunt enim magna id est qui sunt fugiat.
-              Laboris do duis pariatur fugiat Lorem aute sit ullamco. Qui
-              deserunt non reprehenderit dolore nisi velit exercitation Lorem
-              qui do enim culpa. Aliqua eiusmod in occaecat reprehenderit
-              laborum nostrud fugiat voluptate do Lorem culpa officia sint
-              labore. Tempor consectetur excepteur ut fugiat veniam commodo et
-              labore dolore commodo pariatur.
+            <h2 className="text-2xl font-semibold mb-4">
+              Enhanced Legacy Code
+            </h2>
+            <h3 className="font-semibold text-lg mb-4">
+              Addressing Outdated Functionality
+            </h3>
+            <p className="mb-4">
+              The original store locator, built with the Google Maps API, had
+              become outdated, displaying warnings due to deprecated features in
+              newer API versions. To resolve this, I upgraded the legacy
+              JavaScript/PHP codebase, manually updating it to align with the
+              latest Google Maps API standards, ensuring compatibility and
+              eliminating errors.
             </p>
-            <p>
-              Dolor minim irure ut Lorem proident. Ipsum do pariatur est ad ad
-              veniam in commodo id reprehenderit adipisicing. Proident duis
-              exercitation ad quis ex cupidatat cupidatat occaecat adipisicing.
+
+            <h3 className="font-semibold text-lg mb-4">
+              Introducing Geolocation for Seamless User Experience
+            </h3>
+            <p className="mb-4">
+              To enhance usability, I implemented a geolocation feature. Upon
+              loading the app, it prompts the user for permission to access
+              their location. Once granted, the map automatically centers on
+              their position and leverages <strong>Turf.js</strong> to calculate
+              the distance between the user&apos;s coordinates (latitude and
+              longitude) and the nearest store, displaying the closest location
+              instantly.
             </p>
+
+            <h3 className="font-semibold text-lg mb-4">
+              Adding Address Search with Distance Calculation
+            </h3>
+            <p className="mb-4">
+              I further improved functionality by adding an address search
+              feature. When a user inputs an address, the system converts it
+              into coordinates and uses <strong>Turf.js</strong> to compute the
+              distance to the nearest store. This provides users with precise,
+              location-aware results, making store discovery faster and more
+              intuitive.
+            </p>
+
+            <h3 className="font-semibold text-lg mb-4">Outcome</h3>
             <p>
-              Tempor quis dolor veniam quis dolor. Sit reprehenderit eiusmod
-              reprehenderit deserunt amet laborum consequat adipisicing officia
-              qui irure id sint adipisicing. Adipisicing fugiat aliqua nulla
-              nostrud. Amet culpa officia aliquip deserunt veniam deserunt
-              officia adipisicing aliquip proident officia sunt.
+              These enhancements transformed the legacy system into a modern,
+              user-friendly tool, improving performance, eliminating API
+              warnings, and delivering a more engaging experience through
+              real-time geolocation and address-based search capabilities.
             </p>
           </>
         ),
-        badge: "React",
+        badge: [
+          "JavaScript",
+          "PHP",
+          "OpenLayers",
+          "Turf.js",
+          "Tailwind",
+          "HTML5",
+          "SCSS",
+        ],
         image: "/example.webp",
       },
       {
@@ -70,7 +100,7 @@ export const projectContent: Record<ProjectSlug, ProjectContent> = {
             </p>
           </>
         ),
-        badge: "Next.js",
+        badge: ["React", "TypeScript"],
         image: "/example.webp",
       },
     ],
@@ -98,7 +128,7 @@ export const projectContent: Record<ProjectSlug, ProjectContent> = {
             </p>
           </>
         ),
-        badge: "Changelog",
+        badge: ["React", "TypeScript"],
         image: "/example.webp",
       },
       {
@@ -112,7 +142,7 @@ export const projectContent: Record<ProjectSlug, ProjectContent> = {
             </p>
           </>
         ),
-        badge: "Node.js",
+        badge: ["React", "TypeScript"],
         image: "/example.webp",
       },
     ],
@@ -134,7 +164,7 @@ export const projectContent: Record<ProjectSlug, ProjectContent> = {
             </p>
           </>
         ),
-        badge: "Launch Week",
+        badge: ["React", "TypeScript"],
         image: "/example.webp",
       },
       {
@@ -149,7 +179,7 @@ export const projectContent: Record<ProjectSlug, ProjectContent> = {
             </p>
           </>
         ),
-        badge: "Data",
+        badge: ["React", "TypeScript"],
         image: "/example.webp",
       },
     ],
@@ -174,7 +204,7 @@ export const projectContent: Record<ProjectSlug, ProjectContent> = {
             </p>
           </>
         ),
-        badge: "React",
+        badge: ["React", "TypeScript"],
         image: "/example.webp",
       },
       {
@@ -188,7 +218,7 @@ export const projectContent: Record<ProjectSlug, ProjectContent> = {
             </p>
           </>
         ),
-        badge: "Mobile",
+        badge: ["React", "TypeScript"],
         image: "/example.webp",
       },
     ],
@@ -209,7 +239,7 @@ export const projectContent: Record<ProjectSlug, ProjectContent> = {
             </p>
           </>
         ),
-        badge: "Changelog",
+        badge: ["React", "TypeScript"],
         image: "/example.webp",
       },
       {
@@ -223,7 +253,7 @@ export const projectContent: Record<ProjectSlug, ProjectContent> = {
             </p>
           </>
         ),
-        badge: "AI/ML",
+        badge: ["React", "TypeScript"],
         image: "/example.webp",
       },
     ],
@@ -241,7 +271,7 @@ export const projectContent: Record<ProjectSlug, ProjectContent> = {
             </p>
           </>
         ),
-        badge: "Changelog",
+        badge: ["React", "TypeScript"],
         image: "/example.webp",
       },
     ],
@@ -259,7 +289,7 @@ export const defaultContent: ProjectContent = {
           again.
         </p>
       ),
-      badge: "404",
+      badge: ["React", "TypeScript"],
       image: "/example.webp",
     },
   ],

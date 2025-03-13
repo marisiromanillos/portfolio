@@ -6,6 +6,7 @@ import {
   projectContent,
   isValidSlug,
   defaultContent,
+  ProjectSlug,
 } from "@/app/data/projectData";
 
 // Define the props interface with the correct type
@@ -15,17 +16,25 @@ interface UniqueProjectSlugProps {
 
 const UniqueProjectSlug: React.FC<UniqueProjectSlugProps> = ({ slug }) => {
   // Use the project if slug is valid, otherwise use default content
-  const project = isValidSlug(slug) ? projectContent[slug] : defaultContent;
+  const project = isValidSlug(slug)
+    ? projectContent[slug as ProjectSlug]
+    : defaultContent;
 
   return (
     <TracingBeam className="px-6">
       <div className="max-w-2xl mx-auto antialiased pt-4 relative">
         {project.items.map((item, index) => (
           <div key={index} className="mb-10">
-            <h2 className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
-              {item.badge}
-            </h2>
-
+            <div className="flex md:p-0 p-2 flex-wrap md:gap-2 gap-1">
+              {item.badge.map((badgeItem, badgeIndex) => (
+                <span
+                  key={badgeIndex}
+                  className="bg-hotBlue text-white rounded-full text-sm w-fit px-4 py-1 mb-4"
+                >
+                  {badgeItem}
+                </span>
+              ))}
+            </div>
             <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
 
             <div className="text-sm prose prose-sm dark:prose-invert">
@@ -33,8 +42,11 @@ const UniqueProjectSlug: React.FC<UniqueProjectSlugProps> = ({ slug }) => {
                 <Image
                   src={item.image}
                   alt={item.title}
-                  height="1000"
-                  width="1000"
+                  width="0"
+                  height="0"
+                  sizes="100vw"
+                  style={{ width: "100%", height: "auto" }}
+                  priority
                   className="rounded-lg mb-10 object-cover"
                 />
               )}
