@@ -1,8 +1,13 @@
 import React from "react";
 
-export type ProjectSlug = "route1" | "route2" | "route3" | "route4" | "route5";
+export type ProjectSlug =
+  | "swytchbike-store-locator"
+  | "swytchbike-main-site"
+  | "swytch-tools-zendesk-app"
+  | "simpsons-api"
+  | "kaizen-physiotherapy"
+  | "pathfinder";
 
-// Type the content structure for a single project item
 export interface ProjectItem {
   title: string;
   description: React.ReactNode;
@@ -17,12 +22,13 @@ export interface ProjectContent {
 
 // Project data
 export const projectContent: Record<ProjectSlug, ProjectContent> = {
-  route1: {
+  "swytchbike-store-locator": {
     items: [
       {
-        title: "Lorem Ipsum Dolor Sit Amet",
+        title: "Swytch Bike Store Locator",
         description: (
           <>
+            <h2>Description</h2>
             <p>
               Sit duis est minim proident non nisi velit non consectetur. Esse
               adipisicing laboris consectetur enim ipsum reprehenderit eu
@@ -69,7 +75,7 @@ export const projectContent: Record<ProjectSlug, ProjectContent> = {
       },
     ],
   },
-  route2: {
+  "swytchbike-main-site": {
     items: [
       {
         title: "Lorem Ipsum Dolor Sit Amet",
@@ -111,7 +117,7 @@ export const projectContent: Record<ProjectSlug, ProjectContent> = {
       },
     ],
   },
-  route3: {
+  "swytch-tools-zendesk-app": {
     items: [
       {
         title: "Lorem Ipsum Dolor Sit Amet",
@@ -148,7 +154,7 @@ export const projectContent: Record<ProjectSlug, ProjectContent> = {
       },
     ],
   },
-  route4: {
+  "simpsons-api": {
     items: [
       {
         title: "Lorem Ipsum Dolor Sit Amet",
@@ -187,7 +193,7 @@ export const projectContent: Record<ProjectSlug, ProjectContent> = {
       },
     ],
   },
-  route5: {
+  "kaizen-physiotherapy": {
     items: [
       {
         title: "Lorem Ipsum Dolor Sit Amet",
@@ -218,6 +224,24 @@ export const projectContent: Record<ProjectSlug, ProjectContent> = {
           </>
         ),
         badge: "AI/ML",
+        image: "/example.webp",
+      },
+    ],
+  },
+  pathfinder: {
+    items: [
+      {
+        title: "Lorem Ipsum Dolor Sit Amet",
+        description: (
+          <>
+            <p>
+              Ex irure dolore veniam ex velit non aute nisi labore ipsum
+              occaecat deserunt cupidatat aute. Enim cillum dolor et nulla sunt
+              exercitation non voluptate qui aliquip esse tempor.
+            </p>
+          </>
+        ),
+        badge: "Changelog",
         image: "/example.webp",
       },
     ],

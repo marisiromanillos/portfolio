@@ -22,10 +22,11 @@ export default async function ProjectPage({ params }: PageParams) {
 
 export async function generateStaticParams(): Promise<SlugType[]> {
   return [
-    { slug: "route1" },
-    { slug: "route2" },
-    { slug: "route3" },
-    { slug: "route4" },
-    { slug: "route5" },
+    { slug: "swytchbike-store-locator" },
+    { slug: "swytchbike-main-site" },
+    { slug: "swytch-tools-zendesk-app" },
+    { slug: "simpsons-api" },
+    { slug: "kaizen-physiotherapy" },
+    { slug: "pathfinder" },
   ];
 }
