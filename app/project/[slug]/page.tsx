@@ -14,8 +14,8 @@ interface SlugType {
 
 // Make component async and await params
 export default async function ProjectPage({ params }: PageParams) {
-  // Await params before accessing slug
-  const { slug } = await params;
+  const resolvedParams = await Promise.resolve(params);
+  const { slug } = resolvedParams;
 
   return <UniqueProjectSlug slug={slug} />;
 }
