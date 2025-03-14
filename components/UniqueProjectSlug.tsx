@@ -37,7 +37,7 @@ const UniqueProjectSlug: React.FC<UniqueProjectSlugProps> = ({ slug }) => {
             </div>
             <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
 
-            <div className="text-sm prose prose-sm dark:prose-invert">
+            <div className="text-sm prose prose-sm">
               {item.image && (
                 <Image
                   src={item.image}
@@ -47,6 +47,7 @@ const UniqueProjectSlug: React.FC<UniqueProjectSlugProps> = ({ slug }) => {
                   sizes="100vw"
                   style={{ width: "100%", height: "auto" }}
                   priority
+                  unoptimized={item.image.endsWith(".gif")}
                   className="rounded-lg mb-10 object-cover"
                 />
               )}
