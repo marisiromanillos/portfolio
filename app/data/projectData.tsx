@@ -331,7 +331,8 @@ export const projectContent: Record<ProjectSlug, ProjectContent> = {
   "kaizen-physiotherapy": {
     items: [
       {
-        title: "Lorem Ipsum Dolor Sit Amet",
+        title:
+          "Building a High-Performance website with Next.js and TypeScript: Leveraging SSR and SSG",
         description: (
           <>
             <p>
@@ -344,7 +345,14 @@ export const projectContent: Record<ProjectSlug, ProjectContent> = {
             </p>
           </>
         ),
-        badge: ["React", "TypeScript"],
+        badge: [
+          "TypeScript",
+          "Next.js",
+          "React",
+          "Open Layers",
+          "HTML5",
+          "Tailwind",
+        ],
         image: "/example.webp",
       },
       {
