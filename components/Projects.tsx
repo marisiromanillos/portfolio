@@ -31,7 +31,7 @@ const Projects = () => {
         <DiSass key="scss" className="h-4 w-4 text-white" />,
         ,
       ],
-      link: "https://github.com/adrianhajdin?tab=repositories",
+      link: "/project/swytchbike-store-locator",
     },
     {
       id: 2,
@@ -44,7 +44,7 @@ const Projects = () => {
         <DiSass key="scss" className="h-4 w-4 text-white" />,
         <DiHtml5 key="html" className="h-4 w-4 text-white" />,
       ],
-      link: "https://github.com/adrianhajdin?tab=repositories",
+      link: "/project/swytchbike-main-site",
     },
     {
       id: 3,
@@ -57,7 +57,7 @@ const Projects = () => {
         <SiTailwindcss key="tailwind" className="h-4 w-4 text-white" />,
         <TbApi key="api" className="h-4 w-4 text-white" />,
       ],
-      link: "https://github.com/adrianhajdin?tab=repositories",
+      link: "/project/swytch-tools-zendesk-app",
     },
     {
       id: 4,
@@ -69,7 +69,7 @@ const Projects = () => {
         <SiExpress key="express" className="h-4 w-4 text-white" />,
         <SiMysql key="mongo" className="h-4 w-4 text-white" />,
       ],
-      link: "https://github.com/adrianhajdin?tab=repositories",
+      link: "/project/simpsons-api",
     },
     {
       id: 5,
@@ -83,7 +83,7 @@ const Projects = () => {
         <SiJest key="jest" className="h-4 w-4 text-white" />,
         <SiTailwindcss key="tailwind" className="h-4 w-4 text-white" />,
       ],
-      link: "https://github.com/adrianhajdin?tab=repositories",
+      link: "/project/kaizen-physiotherapy",
     },
     {
       id: 6,
@@ -97,7 +97,7 @@ const Projects = () => {
         <SiJest key="jest" className="h-4 w-4 text-white" />,
         <SiTailwindcss key="tailwind" className="h-4 w-4 text-white" />,
       ],
-      link: "https://github.com/adrianhajdin?tab=repositories",
+      link: "/project/pathfinder",
     },
   ];
   return (
