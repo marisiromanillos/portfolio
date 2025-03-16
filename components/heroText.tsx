@@ -1,62 +1,49 @@
-// heroText.jsx
 "use client";
-import { useState } from "react";
 
-type People = {
-  Recruiter: string;
-  Engineer: string;
-  Designer: string;
-};
-
-const people: People = {
-  Recruiter:
-    "Full Stack Developer specializing in Javascript, Typescript, React, Next.js, Node.js, SQL and Vercel. My current interests are Remix, Jest, Playwright.4 years of commercial experience working in fast-paced environments and building front-end and back-end web applications that have served over 300,000 users, focusing on user experience and optimization, with a strong eye for clean code and testing.",
-  Engineer:
-    "01000110 01110101 01101100 01101100 00100000 01010011 01110100 01100001 01100011 01101011 00101100 00100000 01001010 01110011 00101100 00100000 01010100 01110011 00101100 00100000 01010010 01100101 01100001 01100011 01110100 00101100 00100000 01001110 01100101 01111000 01110100 00101100 00100000 01001110 01101111 01100100 01100101 00101100 00100000 01000101 01111000 01110000 01110010 01100101 01110011 01110011 00101100 00100000 01010011 01010001 01001100 00101100 00100000 01101001 00100000 01101100 01100101 01100001 01110010 01101110 00100000 01100110 01100001 01110011 01110100",
-  Designer:
-    "Work closely with design teams through Figma or other platforms, translating visual concepts into functional code while maintaining regular communication. Provide technical feedback on design feasibility while respecting creative vision. I prioritize pixel-perfect execution to deliver exceptional user experiences aligned with design specifications",
-};
+import { DiHtml5, DiJavascript1 } from "react-icons/di";
+import {
+  SiJest,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiTypescript,
+  SiExpress,
+  SiMysql,
+} from "react-icons/si";
+import { TbApi } from "react-icons/tb";
+import { SiGooglemaps } from "react-icons/si";
+import { DiSass } from "react-icons/di";
+import { FaReact, FaNode } from "react-icons/fa";
 
 const HeroText = () => {
-  const [selectedRole, setSelectedRole] = useState<string>("Recruiter");
-
   return (
-    <div className="max-w-4xl mx-auto">
-      {/* Buttons container */}
-      <div className="flex flex-wrap justify-center gap-4 mt-12 mb-4">
-        {Object.entries(people).map(([role]) => (
-          <button
-            key={role}
-            onClick={() => setSelectedRole(role)}
-            className={`font-semibold text-lg transition-colors ${
-              selectedRole === role
-                ? "underline text-white shadow-lg"
-                : "text-gray-500"
-            }`}
-          >
-            {role}
-          </button>
-        ))}
-      </div>
-
-      {/* Description container */}
+    <div className="max-w-2xl mx-auto">
       <div className="text-center">
-        {Object.entries(people).map(([role, description]) => (
-          <div
-            key={role}
-            className={`transition-opacity duration-300 ${
-              selectedRole === role
-                ? "opacity-100"
-                : "opacity-0 h-0 overflow-hidden"
-            }`}
-          >
-            {selectedRole === role && (
-              <p className="text-gray-400 max-w-md md:max-w-xl mx-auto">
-                {description}
-              </p>
-            )}
-          </div>
-        ))}
+        <h1 className="text-4xl my-4  font-bold">Full Stack Developer</h1>
+        <p>
+          Full Stack Developer with 4+ years of commercial experience building
+          optimized, user-focused web applications serving 300,000+ users.
+          Confident using JavaScript, TypeScript, React, Next.js, Node.js, SQL,
+          and Jest for testing. Experienced at delivering scalable front-end and
+          back-end solutions in fast-paced environments, with a strong focus on
+          clean code, performance, and collaboration. Good self-starter with
+          experience working in small teams or being the only member of the
+          engineering team.
+        </p>
+        <div className="flex justify-center items-center gap-2 mt-4">
+          <DiJavascript1 className="h-8 w-8 p-1 rounded-full bg-yellow-500 text-white" />
+          <SiTypescript className="h-8 w-8 p-1 rounded-full bg-blue-700 text-white" />
+          <FaReact className="h-8 w-8 p-1 rounded-full bg-cyan-500 text-white" />
+          <SiNextdotjs className="h-8 w-8 p-1 rounded-full bg-black text-white" />
+          <SiJest className="h-8 w-8 p-1 rounded-full bg-red-600 text-white" />
+          <SiTailwindcss className="h-8 w-8 p-1 rounded-full bg-teal-500 text-white" />
+          <SiGooglemaps className="h-8 w-8 p-1 rounded-full bg-green-500 text-white" />
+          <DiHtml5 className="h-8 w-8 p-1 rounded-full bg-orange-500 text-white" />
+          <DiSass className="h-8 w-8 p-1 rounded-full bg-pink-500 text-white" />
+          <TbApi className="h-8 w-8 p-1 rounded-full bg-purple-500 text-white" />
+          <FaNode className="h-8 w-8 p-1 rounded-full bg-green-600 text-white" />
+          <SiExpress className="h-8 w-8 p-1 rounded-full bg-gray-800 text-white" />
+          <SiMysql className="h-8 w-8 p-1 rounded-full bg-blue-600 text-white" />
+        </div>
       </div>
     </div>
   );

@@ -3,13 +3,12 @@ import SplineScene from "./splineScene";
 
 const Hero = () => {
   return (
-    <main className="pt-12 h-svh relative overflow-hidden">
-      <div className="absolute inset-0 z-10 pointer-events-none">
-        <div className="pointer-events-auto">
-          <HeroText />
-        </div>
+    <main className="py-16">
+      <div>
+        <HeroText />
       </div>
-      <div className="h-full pt-14 md:pt-0 w-full">
+
+      <div className="mt-[-150px] h-screen">
         <SplineScene />
       </div>
     </main>
