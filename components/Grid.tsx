@@ -9,9 +9,9 @@ import Image from "next/image";
 const Grid = () => {
   const getImageByItemId = (id: number) => {
     const imageMap: Record<number, string> = {
-      2: "/kaizen.png", // Currently Working On image
-      3: "/review.png", // LinkedIn image
-      4: "/github.webp", // GitHub image
+      2: "/kaizen.png",
+      3: "/review.png",
+      4: "/github.webp",
     };
 
     return imageMap[id] || "";
@@ -59,6 +59,7 @@ const Grid = () => {
           <RiVercelLine className="h-4 w-4 text-white" />
         </div>
       ),
+      href: "/#",
       id: 1,
     },
     {
@@ -79,6 +80,7 @@ const Grid = () => {
         </div>
       ),
       id: 2,
+      href: "/project/kaizen-physiotherapy",
     },
     {
       title: <p className="text-hotBlue">Linkedin</p>,
@@ -87,6 +89,7 @@ const Grid = () => {
       className: "md:col-span-1",
       icon: <FaLinkedin className="h-4 w-4 text-white" />,
       id: 3,
+      href: "https://www.linkedin.com/in/marisi-romanillos/",
     },
     {
       title: <p className="text-green-400">Github</p>,
@@ -95,19 +98,22 @@ const Grid = () => {
       className: "md:col-span-2",
       icon: <FaGithub className="h-4 w-4 text-white" />,
       id: 4,
+      href: "https://github.com/marisi-romanillos",
     },
   ];
   return (
     <BentoGrid className="md:py-16 py-12 mx-auto md:auto-rows-[20rem]">
       {items.map((item, i) => (
-        <BentoGridItem
-          key={i}
-          title={item.title}
-          description={item.description}
-          header={item.id !== 1 ? <Skeleton itemId={item.id} /> : null}
-          className={item.className}
-          icon={item.icon}
-        />
+        <a href={item.href} key={i}>
+          <BentoGridItem
+            key={i}
+            title={item.title}
+            description={item.description}
+            header={item.id !== 1 ? <Skeleton itemId={item.id} /> : null}
+            className={item.className}
+            icon={item.icon}
+          />
+        </a>
       ))}
     </BentoGrid>
   );
