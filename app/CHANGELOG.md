@@ -14,7 +14,11 @@
 - Import Bento grid component
 - Add wrapper class to Tailwind config
 - Add content to Grid component
+- Add content to Projects component
+
 
 ### Changed
 
 ### Fixed
+- Fix projects urls
+- Fix z-index on components
