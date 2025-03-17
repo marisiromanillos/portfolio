@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="fixed inset-x-0 max-w-2xl mx-auto z-50 top-2">
+      <header className="fixed inset-x-0 max-w-2xl mx-auto z-[100] top-2">
         <nav className="relative rounded-full border bg-black border-white/[0.2] shadow-input flex justify-center space-x-4 px-8 py-6">
           <NavLink
             href="/"
@@ -134,9 +134,7 @@ const ProjectsNavLink = ({
       onMouseLeave={() => setHoveredLink(null)}
     >
       <Link href="/projects" className="relative">
-        <motion.span className="relative z-10 text-hotPink">
-          {label}
-        </motion.span>
+        <motion.span className="relative zIndex">{label}</motion.span>
 
         <AnimatePresence>
           {isHovered && (
@@ -172,7 +170,7 @@ const ProjectsNavLink = ({
               marginTop: "8px",
               zIndex: 50,
             }}
-            className="w-[150px] md:max-w-2xl bg-black border border-white/20 rounded-lg shadow-lg p-3"
+            className="w-[150px] md:w-auto md:max-w-2xl bg-black border border-white/20 rounded-lg shadow-lg p-3"
           >
             <div className="text-xs text-white/70 mb-2 font-medium">
               Featured Projects

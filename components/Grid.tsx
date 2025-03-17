@@ -27,7 +27,7 @@ const Grid = () => {
         height="0"
         sizes="100vw"
         style={{ width: "100%", height: "auto" }}
-        priority
+        loading="lazy"
       />
     </div>
   );
@@ -98,20 +98,18 @@ const Grid = () => {
     },
   ];
   return (
-    <div id="view-all-projects">
-      <BentoGrid className="md:py-16 py-12 mx-auto md:auto-rows-[20rem]">
-        {items.map((item, i) => (
-          <BentoGridItem
-            key={i}
-            title={item.title}
-            description={item.description}
-            header={item.id !== 1 ? <Skeleton itemId={item.id} /> : null}
-            className={item.className}
-            icon={item.icon}
-          />
-        ))}
-      </BentoGrid>
-    </div>
+    <BentoGrid className="md:py-16 py-12 mx-auto md:auto-rows-[20rem]">
+      {items.map((item, i) => (
+        <BentoGridItem
+          key={i}
+          title={item.title}
+          description={item.description}
+          header={item.id !== 1 ? <Skeleton itemId={item.id} /> : null}
+          className={item.className}
+          icon={item.icon}
+        />
+      ))}
+    </BentoGrid>
   );
 };
 export default Grid;
