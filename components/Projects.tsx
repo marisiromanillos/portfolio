@@ -101,7 +101,7 @@ const Projects = () => {
     },
   ];
   return (
-    <section className="md:py-16  py-12">
+    <section id="view-all-projects" className="md:py-16 top-10 py-12">
       <div className="wrapper">
         <div className="pb-12">
           <h1 className="font-bold text-center md:text-6xl text-2xl">

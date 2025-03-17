@@ -88,6 +88,9 @@ const config: Config = {
         hotPink: "#FF1FF4",
         hotBlue: "#067DFC",
       },
+      zIndex: {
+        100: "100",
+      },
     },
   },
   plugins: [
