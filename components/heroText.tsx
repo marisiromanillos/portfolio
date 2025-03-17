@@ -16,10 +16,10 @@ import { FaReact, FaNode } from "react-icons/fa";
 
 const HeroText = () => {
   return (
-    <div className="max-w-2xl mx-auto">
+    <div className="wrapper mt-10 mx-auto">
       <div className="text-center">
-        <h1 className="text-4xl my-4  font-bold">Full Stack Developer</h1>
-        <p>
+        <h1 className="text-4xl my-4 font-extrabold">FULL STACK DEVELOPER</h1>
+        <p className="text-base text-slate-300 max-w-2xl mx-auto">
           Full Stack Developer with 4+ years of commercial experience building
           optimized, user-focused web applications serving 300,000+ users.
           Confident using JavaScript, TypeScript, React, Next.js, Node.js, SQL,
@@ -29,7 +29,7 @@ const HeroText = () => {
           experience working in small teams or being the only member of the
           engineering team.
         </p>
-        <div className="flex justify-center items-center gap-2 mt-4">
+        <div className="flex justify-center gap-2 flex-wrap items-center mt-4">
           <DiJavascript1 className="h-8 w-8 p-1 rounded-full bg-yellow-500 text-white" />
           <SiTypescript className="h-8 w-8 p-1 rounded-full bg-blue-700 text-white" />
           <FaReact className="h-8 w-8 p-1 rounded-full bg-cyan-500 text-white" />

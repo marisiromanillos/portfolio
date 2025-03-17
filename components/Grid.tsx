@@ -98,18 +98,20 @@ const Grid = () => {
     },
   ];
   return (
-    <BentoGrid className="md:py-16 py-12 mx-auto md:auto-rows-[20rem]">
-      {items.map((item, i) => (
-        <BentoGridItem
-          key={i}
-          title={item.title}
-          description={item.description}
-          header={item.id !== 1 ? <Skeleton itemId={item.id} /> : null}
-          className={item.className}
-          icon={item.icon}
-        />
-      ))}
-    </BentoGrid>
+    <div id="view-all-projects">
+      <BentoGrid className="md:py-16 py-12 mx-auto md:auto-rows-[20rem]">
+        {items.map((item, i) => (
+          <BentoGridItem
+            key={i}
+            title={item.title}
+            description={item.description}
+            header={item.id !== 1 ? <Skeleton itemId={item.id} /> : null}
+            className={item.className}
+            icon={item.icon}
+          />
+        ))}
+      </BentoGrid>
+    </div>
   );
 };
 export default Grid;
