@@ -21,8 +21,8 @@ const UniqueProjectSlug: React.FC<UniqueProjectSlugProps> = ({ slug }) => {
     : defaultContent;
 
   return (
-    <TracingBeam className="px-6">
-      <div className="max-w-2xl mx-auto antialiased pt-4 relative">
+    <TracingBeam className="px-6 mt-28">
+      <div className="max-w-2xl mx-auto antialiased relative">
         {project.items.map((item, index) => (
           <div key={index} className="mb-10">
             <div className="flex md:p-0 p-2 flex-wrap md:gap-2 gap-1">
